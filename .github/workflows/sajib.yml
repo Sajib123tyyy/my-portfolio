@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Creative Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header / Navbar */
+    header {
+      background-color: #1e1e1e;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ff6347;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(to right, #1e1e1e, #333);
+      color: #fff;
+    }
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Services Section */
+    #services {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    #services h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .service-card {
+      background: #fff;
+      padding: 25px;
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .service-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #1e1e1e;
+    }
+
+    /* Portfolio Section */
+    #portfolio {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    #portfolio h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+    .portfolio-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .portfolio-item {
+      width: 300px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .portfolio-item img {
+      width: 100%;
+      display: block;
+    }
+    .portfolio-item:hover {
+      transform: scale(1.05);
+    }
+
+    /* Contact Section */
+    #contact {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #1e1e1e;
+      color: #fff;
+    }
+    #contact h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    #contact p {
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+    }
+    #contact a {
+      color: #ff6347;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      padding: 20px;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .services-container, .portfolio-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Creative Video Editor & Graphic Designer</h2>
+    <p>I create engaging videos, stunning graphics, motion graphics, and branding content to elevate your brand and connect with your audience.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>My Services</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <h3>🎬 Video Editing</h3>
+        <p>Professional editing using Adobe Premiere Pro, After Effects, CapCut, and Alight Motion. Cinematic cuts and smooth transitions that engage viewers.</p>
+      </div>
+      <div class="service-card">
+        <h3>🎨 Graphic Design</h3>
+        <p>Creative designs with Photoshop, Illustrator, and Canva. Logos, posters, social media posts, and marketing visuals that match your brand style.</p>
+      </div>
+      <div class="service-card">
+        <h3>✨ Motion Graphics & Animation</h3>
+        <p>Eye-catching animations, intros, and explainer videos that make your content stand out.</p>
+      </div>
+      <div class="service-card">
+        <h3>📢 Branding & Social Media</h3>
+        <p>Custom content for Instagram, Facebook, YouTube, and TikTok that builds your online presence.</p>
+      </div>
+      <div class="service-card">
+        <h3>📖 Creative Storytelling</h3>
+        <p>Transforming raw ideas into meaningful visuals that connect with your audience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item"><img src="example1.jpg" alt="Project 1"></div>
+      <div class="portfolio-item"><img src="example2.jpg" alt="Project 2"></div>
+      <div class="portfolio-item"><img src="example3.jpg" alt="Project 3"></div>
+      <!-- Add more portfolio items -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you want to work together or have a project in mind, feel free to <a href="mailto:yourmail@example.com">email me</a> or message me on social media.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+
+</body>
+</html>
